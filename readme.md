@@ -1,27 +1,54 @@
-# MeshCentral
+# rdphiro
+
+> **rdphiro** is a customized, self-hosted remote desktop, terminal, and device management platform powered by **[MeshCentral](https://github.com/Ylianst/MeshCentral)**.
+
+---
+
+## 🙏 Credits & Upstream Attribution
+
+This project is built directly on top of the remarkable open-source work of:
+- **Original Author & Creator**: [Ylian Saint-Hilaire](https://github.com/Ylianst) (`ylianst@gmail.com`)
+- **Upstream Project Repository**: [GitHub - Ylianst/MeshCentral](https://github.com/Ylianst/MeshCentral)
+- **Official Website**: [meshcentral.com](https://meshcentral.com)
+- **Official Documentation**: [Searchable Documentation](https://ylianst.github.io/MeshCentral/)
+
+All core remote management capabilities, real-time KVM screen scraping, WebSocket relaying, and cryptographic agent architecture are designed and maintained by Ylian Saint-Hilaire and the generous MeshCentral open-source community under the **[Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)**.
+
+---
+
+## 🚀 rdphiro Documentation & Quickstart
+
+- 📖 **[Master Operations & AWS Lightsail Deployment Guide](RDPHIRO_MASTER_GUIDE.md)**: Full end-to-end operational manual, agent installation steps for Windows/Linux/Mac, and step-by-step Lightsail hosting blueprint with Let's Encrypt SSL.
+- 💻 **Local Test Runner**: Run `./scripts/run-local.sh` to launch locally on `https://localhost:4430`.
+- ☁️ **AWS Lightsail Bootstrap**: Run `sudo bash scripts/setup-lightsail.sh` on an Ubuntu Lightsail instance.
+- 🔀 **Optional Nginx Proxy**: See `nginx/rdphiro.conf` if sharing ports with other websites.
+
+---
 
 ## Table of Contents
 
-[About](#about)
-[Social Media](#social-media)
-[Documentation](#documentation)
-[Video Tutorials](#video-tutorials)
-[Community Meetings](#community-meetings)
-[Feedback](#feedback)
-[Unofficial Chatrooms](#unofficial-chatrooms)
-[Archive PDFs](#archive-pdfs)
-[License](#license)
+[About MeshCentral](#about-meshcentral)  
+[Social Media](#social-media)  
+[Documentation](#documentation)  
+[Video Tutorials](#video-tutorials)  
+[Community Meetings](#community-meetings)  
+[Feedback](#feedback)  
+[Unofficial Chatrooms](#unofficial-chatrooms)  
+[Archive PDFs](#archive-pdfs)  
+[License](#license)  
 
-## About
+---
+
+## About MeshCentral
 MeshCentral is a full computer management web site. With MeshCentral, you can run your own web server to remotely manage and control computers on a local network or anywhere on the internet. Once you get the server started, create device group and download and install an agent on each computer you want to manage. A minute later, the new computer will show up on the web site and you can take control of it. MeshCentral includes full web-based remote desktop, terminal and file management capability.
 
 For more information, [visit MeshCentral.com](https://meshcentral.com).
 
 ## Social Media
-[YouTube](https://www.youtube.com/channel/UCJWz607A8EVlkilzcrb-GKg/videos)
-[Reddit](https://www.reddit.com/r/MeshCentral/)
-[BlogSpot](https://meshcentral2.blogspot.com/)
-[LinkedIn](https://www.linkedin.com/groups/13067101/)
+[YouTube](https://www.youtube.com/channel/UCJWz607A8EVlkilzcrb-GKg/videos)  
+[Reddit](https://www.reddit.com/r/MeshCentral/)  
+[BlogSpot](https://meshcentral2.blogspot.com/)  
+[LinkedIn](https://www.linkedin.com/groups/13067101/)  
 
 ## Documentation
 [New Searchable Documentation](https://ylianst.github.io/MeshCentral/) is available here and contains information every administrator should know including usage, the server configuration file, databases, TLS offloading, Let's Encrypt, IP Filtering, Email setup, embedding, server port aliasing, reverse proxy setup, multi factor authentication, branding & terms of use, HashiCorp Vault support, and SSO.
@@ -66,17 +93,17 @@ If you are filing a problem report, you should include:
 * Any troubleshooting you took to resolve the issue yourself
 * Any other similar reports
 
-If you are having issues with the following other products, you should file a report on their respective issue pages
-[MeshAgent](https://github.com/Ylianst/MeshAgent/issues)
-[MeshRouter](https://github.com/Ylianst/MeshCentralRouter/issues)
+If you are having issues with the following other products, you should file a report on their respective issue pages:  
+[MeshAgent](https://github.com/Ylianst/MeshAgent/issues)  
+[MeshRouter](https://github.com/Ylianst/MeshCentralRouter/issues)  
 
 ## Unofficial chatrooms
 - Discord Server: https://discord.gg/8wHC6ASWAc
 - Telegram Channel: https://t.me/meshcentral
 
 ## Archive PDFs
-[User's Guide](https://meshcentral.com/docs/MeshCentral2UserGuide.pdf)
-[Installation Guide](https://meshcentral.com/docs/MeshCentral2InstallGuide.pdf)
+[User's Guide](https://meshcentral.com/docs/MeshCentral2UserGuide.pdf)  
+[Installation Guide](https://meshcentral.com/docs/MeshCentral2InstallGuide.pdf)  
 
 ## License
 This software is licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0).
