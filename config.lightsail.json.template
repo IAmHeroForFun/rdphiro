@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Ylianst/MeshCentral/master/meshcentral-config-schema.json",
+  "settings": {
+    "cert": "rdphiro.yourdomain.com",
+    "port": 443,
+    "redirPort": 80,
+    "sessionKey": "CHANGE_THIS_TO_A_RANDOM_LONG_SECRET_KEY_STRING",
+    "allowHighQualityDesktop": true,
+    "compression": true,
+    "wsCompression": true,
+    "agentWsCompression": true,
+    "StrictTransportSecurity": true,
+    "cleanNpmCacheOnUpdate": true
+  },
+  "domains": {
+    "": {
+      "title": "rdphiro",
+      "title2": "Remote Access Platform",
+      "newAccounts": false,
+      "userNameIsEmail": true,
+      "welcomeText": "rdphiro Remote Desktop Server",
+      "agentCustomization": {
+        "displayName": "rdphiro Agent",
+        "description": "rdphiro agent for secure remote desktop, terminal and management.",
+        "companyName": "rdphiro",
+        "serviceName": "rdphiroagent",
+        "fileName": "rdphiroagent"
+      },
+      "consentMessages": {
+        "title": "rdphiro",
+        "desktop": "{0} requesting remote desktop access. Grant access?",
+        "terminal": "{0} requesting remote terminal access. Grant access?",
+        "files": "{0} requesting remote files access. Grant access?"
+      },
+      "notificationMessages": {
+        "title": "rdphiro",
+        "desktop": "{0} started a remote desktop session.",
+        "terminal": "{0} started a remote terminal session.",
+        "files": "{0} started a remote files session."
+      }
+    }
+  },
+  "letsencrypt": {
+    "email": "admin@yourdomain.com",
+    "names": "rdphiro.yourdomain.com",
+    "production": true
+  }
+}
